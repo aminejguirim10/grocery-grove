@@ -35,6 +35,12 @@ const HomeNewsLetterForm = () => {
           title: "Email sent",
           description: "Your email has been sent successfully",
         });
+      } else if (response.status === 400) {
+        toast({
+          title: "Email already added",
+          description: "Your email has already been added to the list",
+          variant: "destructive",
+        });
       } else {
         toast({
           title: "Email not sent",
@@ -63,7 +69,7 @@ const HomeNewsLetterForm = () => {
             <FormItem className="flex-1">
               <FormControl>
                 <Input
-                  placeholder="Your Email Addres"
+                  placeholder="Your Email Address"
                   {...field}
                   disabled={loading}
                 />
