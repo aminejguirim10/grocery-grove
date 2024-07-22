@@ -4,6 +4,7 @@ import "./globals.css";
 import HomeFooter from "@/components/layout/home-footer";
 import HomeNavbar from "@/components/layout/home-navbar";
 import { Toaster } from "@/components/ui/toaster";
+import VercelAnalytics from "@/components/layout/vercelAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
         {children}
         <HomeFooter />
         <Toaster />
+        <VercelAnalytics />
       </body>
     </html>
   );

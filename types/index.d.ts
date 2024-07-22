@@ -10,7 +10,7 @@ declare interface HomeStepItemProps {
   icon: any;
 }
 
-declare interface HomeProdctItemProps {
+declare interface HomeProductItemProps {
   title: string;
   price: string;
   imageUrl: string;

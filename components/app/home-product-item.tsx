@@ -14,7 +14,7 @@ const HomeProductItem = ({
   reviews,
   stars,
   index,
-}: HomeProdctItemProps) => {
+}: HomeProductItemProps) => {
   const starElements = Array.from({ length: stars }, (_, index) => (
     <Icons.star
       key={index}
