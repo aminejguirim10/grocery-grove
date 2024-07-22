@@ -47,7 +47,7 @@ const navigations = [
 
 export default function HomeFooter() {
   return (
-    <section className="flex flex-col gap-6 pt-24 max-md:pt-12 md:pb-2">
+    <section className="flex flex-col gap-6 md:pb-2">
       <div className=" mx-auto max-w-7xl flex flex-col items-center gap-6 ">
         <div className="size-[40px]">
           <Link href={"/"}>

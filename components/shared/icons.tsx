@@ -6,6 +6,7 @@ import {
   CircleUser,
   ListChecks,
   PackageCheck,
+  Star,
 } from "lucide-react";
 import { MdOutlineFacebook } from "react-icons/md";
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
@@ -22,4 +23,5 @@ export const Icons = {
   user: CircleUser,
   listChecks: ListChecks,
   packageCheck: PackageCheck,
+  star: Star,
 };

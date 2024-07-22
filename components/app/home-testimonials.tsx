@@ -2,7 +2,7 @@ import { testimonials } from "@/constants";
 
 export default function HomeTestimonials() {
   return (
-    <div className="bg-white mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+    <div className="bg-white mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 ">
       <div className="mx-auto max-w-xl text-center">
         <h2 className="text-4xl max-sm:text-2xl max-md:text-3xl font-bold md:max-w-3xl text-[#2892B0]  leading-8 tracking-tight max-md:text-start  ">
           Testimonials

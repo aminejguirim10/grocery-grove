@@ -9,3 +9,12 @@ declare interface HomeStepItemProps {
   subTitle: string;
   icon: any;
 }
+
+declare interface HomeProdctItemProps {
+  title: string;
+  price: string;
+  imageUrl: string;
+  stars: number;
+  reviews: number;
+  index: number;
+}

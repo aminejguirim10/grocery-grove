@@ -57,7 +57,7 @@ export const newsLetterTemplate = (email: string) => {
                 <tr>
                   <td>
                     <img
-                      src="${process.env.NEXTAUTH_URL}/assets/logo.png"
+                      src="${process.env.NEXT_URL}/assets/logo.png"
                       style="
                         display: block;
                         outline: none;

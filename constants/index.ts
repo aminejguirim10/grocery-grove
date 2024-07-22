@@ -96,3 +96,48 @@ export const HomeStepsItems = [
     icon: Icons.packageCheck,
   },
 ];
+
+export const HomeProductsItems = [
+  {
+    title: "Tomatoes",
+    price: "$3.99",
+    imageUrl: "/assets/tomato.jpg",
+    stars: 5,
+    reviews: 5.2,
+  },
+  {
+    title: "Apples",
+    price: "$2.99",
+    imageUrl: "/assets/apple.jpg",
+    stars: 5,
+    reviews: 4.2,
+  },
+  {
+    title: "Bananas",
+    price: "$1.99",
+    imageUrl: "/assets/banana.jpg",
+    stars: 4.5,
+    reviews: 3.8,
+  },
+  {
+    title: "Onions",
+    price: "$2.49",
+    imageUrl: "/assets/onion.png",
+    stars: 5,
+    reviews: 4.9,
+  },
+  {
+    title: "Oranges",
+    price: "$3.49",
+    imageUrl: "/assets/orange.png",
+    stars: 5,
+    reviews: 4.5,
+  },
+  {
+    title: "Potatoes",
+    price: "$2.99",
+    imageUrl: "/assets/potato.jpg",
+    stars: 5,
+    reviews: 2.2,
+  },
+];

@@ -4,7 +4,7 @@ import HomeNewsLetterForm from "@/components/form/home-newsLetter-form";
 
 const HomeNewsLetter = () => {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
       <div className=" flex max-md:flex-col gap-8">
         <div className="flex flex-col md:w-1/2 max-sm:gap-2 gap-4  justify-center">
           <h1 className="text-4xl max-sm:text-2xl max-md:text-3xl font-bold md:max-w-3xl text-[#B02858]">
