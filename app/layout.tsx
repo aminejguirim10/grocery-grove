@@ -10,6 +10,22 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "GroceryGrove",
   description: "GroceryGrove is a grocery delivery service.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: `${process.env.NEXT_URL}`,
+    description: "GroceryGrove is a grocery delivery service.",
+    siteName: "GroceryGrove",
+    images: [
+      {
+        url: `${process.env.NEXT_URL}/assets/og.png`,
+        width: 1200,
+        height: 630,
+        alt: "GroceryGrove",
+      },
+    ],
+  },
+  metadataBase: new URL(`${process.env.NEXT_URL}`),
 };
 
 export default function RootLayout({

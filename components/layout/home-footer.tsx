@@ -48,7 +48,7 @@ const navigations = [
 export default function HomeFooter() {
   return (
     <section className="flex flex-col gap-6 md:pb-2">
-      <div className=" mx-auto max-w-7xl flex flex-col items-center gap-6 ">
+      <div className=" mx-auto max-w-7xl flex flex-col items-center gap-3 md:gap-6 ">
         <div className="size-[40px]">
           <Link href={"/"}>
             <Image
@@ -60,7 +60,7 @@ export default function HomeFooter() {
             />
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row gap-6 font-semibold text-gray-500 text-center">
+        <div className="flex flex-col md:flex-row gap-3 md:gap-6 font-semibold text-gray-500 text-center max-sm:text-sm">
           <Link href={"/"}>Shop Now</Link>
           <Link href={"/"}>Specials</Link>
           <Link href={"/"}>Recipes</Link>
