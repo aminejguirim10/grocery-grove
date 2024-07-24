@@ -23,21 +23,21 @@ const HomeProductItem = ({
   ));
 
   return (
-    <Card className="shadow-lg">
+    <Card className="shadow-xl">
       <CardHeader className="bg-white rounded-md">
-        <div className="h-[150px] md:h-[200px] lg:h-[250px]">
+        <div className="flex justify-center items-center h-[150px] md:h-[200px] lg:h-[250px]">
           <Image
             src={imageUrl}
             alt={title}
             width={200}
             height={200}
-            className="size-full"
+            className="h-full w-1/2 "
           />
         </div>
       </CardHeader>
       <CardContent className="flex flex-col gap-1 pt-4 items-center">
         <h1 className="text-center font-bold text-lg md:text-xl ">{title}</h1>
-        <p className="text-center text-muted-foreground font-semibold text-lg">
+        <p className="text-center text-muted-foreground font-semibold text-base md:text-lg">
           {price}
         </p>
         <div className="flex gap-2">
