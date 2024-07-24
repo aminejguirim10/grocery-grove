@@ -141,3 +141,9 @@ export const HomeProductsItems = [
     reviews: 2.2,
   },
 ];
+export const stats = [
+  { id: 1, label: "Users", value: 25000 },
+  { id: 2, label: "Reviews", value: 20000 },
+  { id: 3, label: "Products", value: 150 },
+  { id: 4, label: "Categories", value: 20 },
+];

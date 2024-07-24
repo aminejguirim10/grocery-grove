@@ -1,4 +1,5 @@
 import { testimonials } from "@/constants";
+import HomeTestimonialsStats from "@/components/app/home-testimonials-stats";
 
 export default function HomeTestimonials() {
   return (
@@ -40,6 +41,7 @@ export default function HomeTestimonials() {
           ))}
         </div>
       </div>
+      <HomeTestimonialsStats />
     </div>
   );
 }
