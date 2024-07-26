@@ -25,7 +25,7 @@ const HomeProductItem = ({
   return (
     <Card className="shadow-xl">
       <CardHeader className="bg-white rounded-md">
-        <div className="flex justify-center items-center h-[150px] md:h-[200px] lg:h-[250px]">
+        <div className="flex justify-center items-center h-[100px] md:h-[120px] lg:h-[150px]">
           <Image
             src={imageUrl}
             alt={title}
@@ -49,7 +49,7 @@ const HomeProductItem = ({
           </span>
         </div>
       </CardContent>
-      <CardFooter className="justify-center">
+      <CardFooter className="justify-center -mt-2">
         <Button
           variant={index % 2 ? "product" : "outline"}
           className={index % 2 == 0 ? "border-orange-400" : ""}
