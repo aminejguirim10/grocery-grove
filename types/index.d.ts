@@ -2,6 +2,8 @@ declare interface HomeFeatureItemProps {
   title: string;
   subTitle: string;
   icon: any;
+  index: number;
+  controls: any;
 }
 
 declare interface HomeStepItemProps {

@@ -1,8 +1,7 @@
-import { HomeFeaturesItems } from "@/constants";
-import HomeFeatureItem from "@/components/app/home-feature-item";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/shared/icons";
+import HomeFeaturesItemsSection from "@/components/app/home-features-items";
 
 const HomeFeatures = () => {
   return (
@@ -21,16 +20,7 @@ const HomeFeatures = () => {
             competitive pricing to our valued customers.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-7 md:mt-14">
-          {HomeFeaturesItems.map((feature, i) => (
-            <HomeFeatureItem
-              icon={feature.icon}
-              title={feature.title}
-              subTitle={feature.subTitle}
-              key={i}
-            />
-          ))}
-        </div>
+        <HomeFeaturesItemsSection />
         <div className="flex gap-2 mt-7 md:mt-14">
           <Link
             href={"/"}
