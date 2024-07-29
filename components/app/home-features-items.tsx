@@ -15,7 +15,10 @@ const HomeFeaturesItemsSection = () => {
     }
   }, [controls, inView]);
   return (
-    <div ref={ref} className="grid grid-cols-1 md:grid-cols-3 mt-7 md:mt-14">
+    <div
+      ref={ref}
+      className="grid grid-cols-1 md:grid-cols-3  md:gap-4 mt-7 md:mt-14"
+    >
       {HomeFeaturesItems.map((feature, i) => (
         <HomeFeatureItem
           icon={feature.icon}

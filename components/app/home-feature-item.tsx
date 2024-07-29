@@ -21,10 +21,12 @@ const HomeFeatureItem = ({
       <div className="bg-red-200 px-2 py-2 rounded-full w-fit">
         <Icon className="size-6 sm:size-7 text-[#B03228]" />
       </div>
-      <h2 className="font-semibold md:font-bold text-xl text-[#332E25]">
+      <h2 className="font-semibold md:font-bold text-lg xl:text-xl text-[#332E25]">
         {title}
       </h2>
-      <p className="text-gray-600 max-md:text-sm md:text-center">{subTitle}</p>
+      <p className="text-gray-600 max-md:text-sm md:text-center text-sm xl:text-base">
+        {subTitle}
+      </p>
     </motion.div>
   );
 };
