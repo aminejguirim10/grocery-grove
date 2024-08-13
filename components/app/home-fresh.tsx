@@ -1,24 +1,24 @@
-import Link from "next/link";
-import React from "react";
-import { buttonVariants } from "@/components/ui/button";
-import Image from "next/image";
-import { Icons } from "@/components/shared/icons";
+import Link from "next/link"
+import React from "react"
+import { buttonVariants } from "@/components/ui/button"
+import Image from "next/image"
+import { Icons } from "@/components/shared/icons"
 
 const HomeFresh = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className=" flex max-md:flex-col-reverse gap-8">
-        <div className="md:w-1/2 h-[350px] max-md:h-[270px] max-lg:h-[350px] ">
+      <div className="flex gap-8 max-md:flex-col-reverse">
+        <div className="h-[350px] max-lg:h-[350px] max-md:h-[270px] md:w-1/2">
           <Image
             src={"/assets/img2.jpg"}
             width={600}
             height={600}
             alt="hero image"
-            className="h-full rounded-xl w-full"
+            className="h-full w-full rounded-xl"
           />
         </div>
-        <div className="flex flex-col md:w-1/2 max-sm:gap-2 gap-4  justify-center">
-          <h1 className="text-4xl max-sm:text-2xl max-md:text-3xl font-bold md:max-w-3xl text-[#2892B0]">
+        <div className="flex flex-col justify-center gap-4 max-sm:gap-2 md:w-1/2">
+          <h1 className="text-4xl font-bold text-[#2892B0] max-md:text-3xl max-sm:text-2xl md:max-w-3xl">
             Get Fresh Groceries Delivered to Your Doorstep
           </h1>
           <p className="text-muted-foreground">
@@ -50,7 +50,7 @@ const HomeFresh = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HomeFresh;
+export default HomeFresh

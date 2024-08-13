@@ -1,4 +1,4 @@
-import { Icons } from "@/components/shared/icons";
+import { Icons } from "@/components/shared/icons"
 
 export const HomeFeaturesItems = [
   {
@@ -19,7 +19,7 @@ export const HomeFeaturesItems = [
       "We strive to offer the best prices in the market, ensuring that you get the most value for your money.",
     icon: Icons.gem,
   },
-];
+]
 
 export const testimonials = [
   {
@@ -76,7 +76,7 @@ export const testimonials = [
         "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
-];
+]
 
 export const HomeStepsItems = [
   {
@@ -95,7 +95,7 @@ export const HomeStepsItems = [
     subTitle: "Check your cart, review your order, and confirm the details.",
     icon: Icons.packageCheck,
   },
-];
+]
 
 export const HomeProductsItems = [
   {
@@ -140,10 +140,10 @@ export const HomeProductsItems = [
     stars: 5,
     reviews: 2.2,
   },
-];
+]
 export const stats = [
   { id: 1, label: "Users", value: 25000 },
   { id: 2, label: "Reviews", value: 20000 },
   { id: 3, label: "Products", value: 150 },
   { id: 4, label: "Categories", value: 20 },
-];
+]

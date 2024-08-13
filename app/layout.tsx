@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import HomeFooter from "@/components/layout/home-footer";
-import HomeNavbar from "@/components/layout/home-navbar";
-import { Toaster } from "@/components/ui/toaster";
-import VercelAnalytics from "@/components/layout/vercelAnalytics";
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
+import HomeFooter from "@/components/layout/home-footer"
+import HomeNavbar from "@/components/layout/home-navbar"
+import { Toaster } from "@/components/ui/toaster"
+import VercelAnalytics from "@/components/layout/vercelAnalytics"
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "GroceryGrove",
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     ],
   },
   metadataBase: new URL(`${process.env.NEXT_URL}`),
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -43,5 +43,5 @@ export default function RootLayout({
         <VercelAnalytics />
       </body>
     </html>
-  );
+  )
 }

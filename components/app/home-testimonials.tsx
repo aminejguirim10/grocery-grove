@@ -1,14 +1,14 @@
-import { testimonials } from "@/constants";
-import HomeTestimonialsStats from "@/components/app/home-testimonials-stats";
+import { testimonials } from "@/constants"
+import HomeTestimonialsStats from "@/components/app/home-testimonials-stats"
 
 export default function HomeTestimonials() {
   return (
-    <div className="bg-white mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 ">
+    <div className="mx-auto max-w-7xl bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="mx-auto max-w-xl text-center">
-        <h2 className="text-4xl max-sm:text-2xl max-md:text-3xl font-bold md:max-w-3xl text-[#2892B0]  leading-8 tracking-tight max-md:text-start  ">
+        <h2 className="text-4xl font-bold leading-8 tracking-tight text-[#2892B0] max-md:text-start max-md:text-3xl max-sm:text-2xl md:max-w-3xl">
           Testimonials
         </h2>
-        <p className="mt-2 text-xl font-bold tracking-tight text-gray-800 sm:text-2xl max-md:text-start">
+        <p className="mt-2 text-xl font-bold tracking-tight text-gray-800 max-md:text-start sm:text-2xl">
           What Our Customers Are Saying
         </p>
       </div>
@@ -43,5 +43,5 @@ export default function HomeTestimonials() {
       </div>
       <HomeTestimonialsStats />
     </div>
-  );
+  )
 }

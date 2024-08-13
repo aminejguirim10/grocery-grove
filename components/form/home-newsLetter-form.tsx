@@ -1,67 +1,67 @@
-"use client";
+"use client"
 
-import { newsLetterSchema } from "@/lib/schema";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+import { newsLetterSchema } from "@/lib/schema"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form"
+import { z } from "zod"
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
-import { toast } from "@/hooks/use-toast";
-import { sendMail } from "@/actions/email.actions";
+} from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import { useState } from "react"
+import { toast } from "@/hooks/use-toast"
+import { sendMail } from "@/actions/email.actions"
 const HomeNewsLetterForm = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false)
   const form = useForm<z.infer<typeof newsLetterSchema>>({
     resolver: zodResolver(newsLetterSchema),
     defaultValues: {
       email: "",
     },
-  });
+  })
 
   async function onSubmit(values: z.infer<typeof newsLetterSchema>) {
-    setLoading(true);
+    setLoading(true)
     try {
-      const response = await sendMail(values.email);
+      const response = await sendMail(values.email)
       if (response.status === 200) {
         toast({
           title: "Email sent",
           description: "Your email has been sent successfully",
-        });
+        })
       } else if (response.status === 400) {
         toast({
           title: "Email already added",
           description: "Your email has already been added to the list",
           variant: "destructive",
-        });
+        })
       } else {
         toast({
           title: "Email not sent",
           description: "Your email has not been sent successfully",
           variant: "destructive",
-        });
+        })
       }
     } catch (error) {
       toast({
         title: "Email not sent",
         description: "Your email has not been sent successfully",
         variant: "destructive",
-      });
+      })
     } finally {
-      setLoading(false);
-      form.reset();
+      setLoading(false)
+      form.reset()
     }
   }
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex  gap-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="flex gap-4">
         <FormField
           control={form.control}
           name="email"
@@ -75,7 +75,7 @@ const HomeNewsLetterForm = () => {
                 />
               </FormControl>
               {form.formState.errors.email && (
-                <FormMessage className="text-sm pt-1 text-red-500" />
+                <FormMessage className="pt-1 text-sm text-red-500" />
               )}
             </FormItem>
           )}
@@ -85,7 +85,7 @@ const HomeNewsLetterForm = () => {
             {loading && (
               <svg
                 aria-hidden="true"
-                className="inline w-6 h-6 text-gray-200 animate-spin dark:text-gray-600 fill-green-600"
+                className="inline h-6 w-6 animate-spin fill-green-600 text-gray-200 dark:text-gray-600"
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ const HomeNewsLetterForm = () => {
         </Button>
       </form>
     </Form>
-  );
-};
+  )
+}
 
-export default HomeNewsLetterForm;
+export default HomeNewsLetterForm

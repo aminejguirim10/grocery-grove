@@ -1,19 +1,19 @@
-import { HomeProductsItems } from "@/constants";
-import HomeProductItem from "@/components/app/home-product-item";
+import { HomeProductsItems } from "@/constants"
+import HomeProductItem from "@/components/app/home-product-item"
 
 const HomeProducts = () => {
   return (
-    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-4 md:items-center ">
-          <h1 className="text-[#B09928] text-4xl max-sm:text-2xl max-md:text-3xl font-bold md:max-w-3xl md:text-center">
+        <div className="flex flex-col gap-4 md:items-center">
+          <h1 className="text-4xl font-bold text-[#B09928] max-md:text-3xl max-sm:text-2xl md:max-w-3xl md:text-center">
             Our Products
           </h1>
-          <p className="text-muted-foreground max-w-2xl md:text-center">
+          <p className="max-w-2xl text-muted-foreground md:text-center">
             Discover a wide variety of fresh produce, pantry staples, and more.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-y-10 lg:gap-x-6 ">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-10">
           {HomeProductsItems.map((product, i) => (
             <HomeProductItem
               key={i}
@@ -28,7 +28,7 @@ const HomeProducts = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HomeProducts;
+export default HomeProducts

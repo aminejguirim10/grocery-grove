@@ -189,5 +189,5 @@ export const newsLetterTemplate = (email: string) => {
     </table>
   </body>
 </html>
-  `;
-};
+  `
+}

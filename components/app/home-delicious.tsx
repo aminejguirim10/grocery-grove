@@ -1,13 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import Image from "next/image"
+import Link from "next/link"
+import { buttonVariants } from "@/components/ui/button"
 
 const HomeDelicious = () => {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div className=" flex max-md:flex-col gap-8">
-        <div className="flex flex-col md:w-1/2 max-sm:gap-2 gap-4  justify-center">
-          <h1 className="text-4xl max-sm:text-2xl max-md:text-3xl font-bold md:max-w-3xl text-[#B06A28]">
+      <div className="flex gap-8 max-md:flex-col">
+        <div className="flex flex-col justify-center gap-4 max-sm:gap-2 md:w-1/2">
+          <h1 className="text-4xl font-bold text-[#B06A28] max-md:text-3xl max-sm:text-2xl md:max-w-3xl">
             Discover Fresh and Delicious Groceries
           </h1>
           <p className="text-muted-foreground">
@@ -31,18 +31,18 @@ const HomeDelicious = () => {
             </Link>
           </div>
         </div>
-        <div className="md:w-1/2 h-[300px] max-md:h-[220px] max-lg:h-[280px] ">
+        <div className="h-[300px] max-lg:h-[280px] max-md:h-[220px] md:w-1/2">
           <Image
             src={"/assets/img3.jpg"}
             width={600}
             height={600}
             alt="hero image"
-            className="h-full rounded-xl w-full"
+            className="h-full w-full rounded-xl"
           />
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HomeDelicious;
+export default HomeDelicious

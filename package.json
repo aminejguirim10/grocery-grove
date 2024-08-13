@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "npx prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
+    "prepare": "husky",
+    "format": "prettier --write .",
+    "test-all": "npm run check-types && npm run check-format && npm run check-lint"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
@@ -36,7 +42,10 @@
     "@types/nodemailer": "^6.4.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "husky": "^9.1.4",
     "postcss": "^8",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "prisma": "^5.17.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

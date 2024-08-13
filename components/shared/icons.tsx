@@ -7,9 +7,9 @@ import {
   ListChecks,
   PackageCheck,
   Star,
-} from "lucide-react";
-import { MdOutlineFacebook } from "react-icons/md";
-import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+} from "lucide-react"
+import { MdOutlineFacebook } from "react-icons/md"
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from "react-icons/io"
 
 export const Icons = {
   facebook: MdOutlineFacebook,
@@ -24,4 +24,4 @@ export const Icons = {
   listChecks: ListChecks,
   packageCheck: PackageCheck,
   star: Star,
-};
+}
