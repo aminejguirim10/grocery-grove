@@ -37,6 +37,6 @@ export const sendMail = async (email: string) => {
     await transporter.sendMail(mailOptions)
     return { message: "Email sent", status: 200 }
   } catch (error: any) {
-    return { message: error.message, status: 400 }
+    return { message: error.message, status: 500 }
   }
 }
